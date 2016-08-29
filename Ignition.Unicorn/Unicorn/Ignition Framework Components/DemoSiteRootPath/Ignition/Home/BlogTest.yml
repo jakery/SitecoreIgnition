@@ -1,0 +1,31 @@
+﻿---
+ID: "b89b8757-ce22-493c-98fe-7f13f866ecbe"
+Parent: "4a442a3d-4fec-4743-abbe-621d8a869095"
+Template: "0ed048af-e431-40e0-a8a5-3028367fc756"
+Path: /sitecore/content/Ignition/Home/BlogTest
+DB: master
+BranchID: "981de9ba-d3e1-41ec-bfe5-44fc2a08113d"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "04bf00db-f5fb-41f7-8ab7-22408372a981"
+      Hint: __Final Renderings
+      Type: Layout
+      Value: |
+        <r xmlns:p="p" xmlns:s="s"
+          p:p="1">
+          <d
+            id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+            <r
+              uid="{4F011576-F7EF-4C01-8048-4DBFBBA30FCE}"
+              s:ds="{38387752-FA4D-4EA2-803C-75B559A0DE10}"
+              s:id="{AB53E1A6-4D98-4BE1-9231-6BB7DD51C5F4}"
+              s:par=""
+              s:ph="layoutContent" />
+          </d>
+        </r>
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160825T200859Z

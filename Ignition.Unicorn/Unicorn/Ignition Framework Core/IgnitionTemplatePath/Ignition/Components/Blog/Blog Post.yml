@@ -1,0 +1,30 @@
+﻿---
+ID: "1f823928-eaeb-4b24-b9c9-a12caf2941f9"
+Parent: "1ce0d52b-0b42-44ba-82f5-001375ba4e0f"
+Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
+Path: /sitecore/templates/Sites/Ignition/Components/Blog/Blog Post
+DB: master
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: Business/32x32/address_book_edit.png
+- ID: "12c33f3f-86c5-43a5-aeb4-5598cec45116"
+  Hint: __Base template
+  Type: tree list
+  Value: |
+    {4C3CDC24-1610-4808-92A3-A221768AE3B2}
+    {6CDD0A6B-9598-4504-89A6-FACD76D6AF29}
+    {85308FC9-E558-4B44-96BA-036C7FDA356C}
+    {AA715605-C3E3-46EC-BDCB-CBB1365E0D1B}
+    {7E31C746-7AF6-485F-9437-BD4ADE415EA3}
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20160823T200842Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: sitecore\admin

@@ -1,0 +1,10 @@
+﻿---
+ID: "28796c18-fbf6-4b38-b714-fcce96f46a16"
+Parent: "37782585-0192-48c7-8f9b-cc31854bec2f"
+Template: "1f823928-eaeb-4b24-b9c9-a12caf2941f9"
+Path: /sitecore/templates/Branches/Ignition/Pages/BlogPage/$name
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
