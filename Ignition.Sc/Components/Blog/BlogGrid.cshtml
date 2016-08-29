@@ -1,0 +1,61 @@
+﻿@using System.Web.Script.Serialization
+@using Ignition.Sc
+@model Ignition.Sc.Components.Blog.BlogGridViewModel
+
+
+<div class="section">
+    <div class="container">
+        <div class="row">
+            @if (Html.Glass().IsInEditingMode)
+            {
+                using (Html.Glass().BeginEditFrame(Model.EditFrameItem, "Edit Blog List", a => a.BlogPosts))
+                {
+                    <span>Click here to adjust this list.</span>
+                }
+            }
+            @foreach (var blogPost in Model.BlogPosts)
+            {
+                <div class="col-sm-6">
+                    <div class="blog-post blog-single-post">
+                        <div class="single-post-title">
+                            <h2>@Html.Glass().Editable(blogPost, a => a.Heading)</h2>
+                        </div>
+
+                        <div class="single-post-image">
+                            @Html.Glass().RenderImage(blogPost, a => a.Image, null, true)
+                        </div>
+
+                        <div class="single-post-info">
+                            <i class="glyphicon glyphicon-time"></i>@Html.Glass().Editable(blogPost, a => a.DateField1) <a href="#" title="Show Comments"><i class="glyphicon glyphicon-comment"></i>11</a>
+                        </div>
+
+                        <div class="single-post-content">
+                            <p>
+                                @Html.Glass().Editable(blogPost, a => a.Abstract)
+                            </p>
+                            @using (Html.Glass().BeginRenderLink(blogPost, a => a.Url, new { @class = "btn" }, true))
+                            {
+                                <span>Read more</span>
+                            }
+
+                        </div>
+                    </div>
+                </div>
+            }
+            @*@Html.Sitecore().Placeholder(IgnitionConstants.Placeholders.Blog.BlogGrid)*@
+            <!-- Pagination -->
+            <div class="pagination-wrapper ">
+                <ul class="pagination pagination-sm">
+                    <li class="disabled"><a href="#">Previous</a></li>
+                    <li class="active"><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li><a href="#">Next</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</div>

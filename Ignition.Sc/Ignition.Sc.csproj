@@ -326,6 +326,8 @@
     <Content Include="Components\News\FeaturedNews.cshtml" />
     <Content Include="Components\News\LatestNews.cshtml" />
     <Content Include="Components\News\NewsGrid.cshtml" />
+    <Content Include="Components\Blog\BlogGrid.cshtml" />
+    <Content Include="Components\Blog\BlogTile.cshtml" />
     <None Include="Properties\PublishProfiles\Ignition.Sc.pubxml" />
     <None Include="Web.config" />
   </ItemGroup>
@@ -335,6 +337,13 @@
     <Compile Include="Components\About\AboutPeopleTileAgent.cs" />
     <Compile Include="Components\About\AboutPeopleTileViewModel.cs" />
     <Compile Include="Components\About\IAboutPeopleTile.cs" />
+    <Compile Include="Components\Blog\BlogController.cs" />
+    <Compile Include="Components\Blog\BlogGridAgent.cs" />
+    <Compile Include="Components\Blog\BlogGridViewModel.cs" />
+    <Compile Include="Components\Blog\BlogPostViewModel.cs" />
+    <Compile Include="Components\Blog\BlogTileViewModel.cs" />
+    <Compile Include="Components\Blog\IBlogGrid.cs" />
+    <Compile Include="Components\Blog\IBlogPost.cs" />
     <Compile Include="Components\Bookends\BookendsController.cs" />
     <Compile Include="Components\Bookends\HeaderAgent.cs" />
     <Compile Include="Components\Bookends\HeaderViewModel.cs" />

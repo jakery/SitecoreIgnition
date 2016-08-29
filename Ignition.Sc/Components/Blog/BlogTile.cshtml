@@ -1,0 +1,26 @@
+﻿@using Ignition.Sc
+@model Ignition.Sc.Components.Blog.BlogPostViewModel
+
+
+<div class="col-sm-6">
+    <div class="blog-post blog-single-post">
+        <div class="single-post-title">
+            <h2>@Html.Glass().Editable(a => a.Heading.Heading)</h2>
+        </div>
+
+        <div class="single-post-image">
+            @Html.Glass().RenderImage(Model, a => a.Image.Image, null, true)
+        </div>
+
+        <div class="single-post-info">
+            <i class="glyphicon glyphicon-time"></i>@Html.Glass().Editable(a => a.DateField1.DateField1) <a href="#" title="Show Comments"><i class="glyphicon glyphicon-comment"></i>11</a>
+        </div>
+
+        <div class="single-post-content">
+            <p>
+                @Html.Glass().Editable(a => a.Abstract.Abstract)
+            </p>
+            <a href="blog-post.html" class="btn">Read more</a>
+        </div>
+    </div>
+</div>
